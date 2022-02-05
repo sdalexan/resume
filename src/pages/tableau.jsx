@@ -1,35 +1,39 @@
 import React, { Component } from 'react';
-import tableau from 'tableau-api';
+// import { tableau } from 'tableau-api';
+ 
+ class Tableau extends Component {
+//   componentDidMount() {
+//     this.initViz()
+//   }
  
  
-class Test extends Component {
-  componentDidMount() {
-    this.initViz()
-  }
+//   initViz() {
+//     const vizUrl = 'https://public.tableau.com/views/Resume_16439147995410/Shawn?:embed=y&:display_count=yes';
+//     const vizContainer = this.vizContainer;
+//     var options = {
+//         hideTabs: true,
+//         onFirstInteractive: function() {
+//           // The viz is now ready and can be safely used.
+//         }
+//      };
+//     let viz = new window.tableau.Viz(vizContainer, vizUrl, options)
+//   }
  
  
-  initViz() {
-    const vizUrl = 'https://public.tableau.com/views/Resume_16439147995410/Shawn?:embed=y&:display_count=yes';
-    const vizContainer = this.vizContainer;
-    var options = {
-        hideTabs: true,
-        onFirstInteractive: function() {
-          // The viz is now ready and can be safely used.
-        }
-     };
-    let viz = new window.tableau.Viz(vizContainer, vizUrl, options)
-  }
- 
- 
-  render() {
+//   render() {
+//     return (
+//         <div style={{padding: "50px"}}>
+//       <div ref={(div) => { this.vizContainer = div }}>
+//       </div>
+//       </div>
+//     )
+//   }
+
+render() {
     return (
-        <div style={{padding: "50px"}}>
-      <div ref={(div) => { this.vizContainer = div }}>
-      </div>
-      </div>
+        <h1>Tableau</h1>
     )
   }
-}
- 
- 
-export default Test;
+ }
+
+export default Tableau;
