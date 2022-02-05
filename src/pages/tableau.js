@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import tableau from 'tableau-api';
+
+class Tableau extends Component {
  
- class Tableau extends Component {
   componentDidMount() {
-    this.initViz()
+    this.initViz();
   }
- 
  
   initViz() {
     const vizUrl = 'https://public.tableau.com/views/Resume_16439147995410/Shawn?:embed=y&:display_count=yes';
